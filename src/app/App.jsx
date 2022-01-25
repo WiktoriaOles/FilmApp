@@ -2,10 +2,8 @@ import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { store } from "./App.setup";
-import { Dashboard } from "../modules";
+import { Dashboard, Movies } from "../modules";
 import { theme } from "../config";
-
-const Dupa = () => <div>dupa</div>;
 
 const App = () => (
   <BrowserRouter>
@@ -13,6 +11,7 @@ const App = () => (
       <ThemeProvider theme={theme}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/movies" element={<Movies />} />
         </Routes>
       </ThemeProvider>
     </Provider>

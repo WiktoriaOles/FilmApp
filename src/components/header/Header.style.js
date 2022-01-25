@@ -11,7 +11,7 @@ export const Navbar = styled.div`
   width: 100%;
   height: 80px;
 
-  background: rgba(18, 24, 41, 0.8);
+  background-color: rgba(18, 24, 41, 0.8);
   backdrop-filter: blur(40px);
 `;
 

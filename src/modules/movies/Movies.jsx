@@ -1,16 +1,16 @@
-import { ContentBox } from "./Dashboard.style";
 import { Header } from "../../components/header";
-import { TextSection } from "../../components/textSection";
-import { Movie } from "../../components/Movie";
-import { response } from "./Dashboard.mock";
-import { MovieList } from "../../components/MovieList";
+import { InfoBox } from "../../components/InfoBox";
 import { Background } from "../../components/Background";
+import { ContentBox } from "./Movies.style";
+import { Movie } from "../../components/Movie";
+import { response } from "../dashboard/Dashboard.mock";
+import { MovieList } from "../../components/MovieList";
 
-const Dashboard = () => (
+const Movies = () => (
   <Background>
     <Header />
     <ContentBox>
-      <TextSection />
+      <InfoBox title="Movies" number="8" />
       <MovieList
         movies={response.Search.map((movie) => (
           <Movie key={movie.imdbID} title={movie.Title} img={movie.Poster} />
@@ -20,4 +20,4 @@ const Dashboard = () => (
   </Background>
 );
 
-export default Dashboard;
+export default Movies;

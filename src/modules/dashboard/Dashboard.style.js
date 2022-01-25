@@ -22,4 +22,5 @@ export const Background = styled.div`
       ${(props) => props.theme.primary}
     );
   background-size: cover;
+  z-index: -10;
 `;
