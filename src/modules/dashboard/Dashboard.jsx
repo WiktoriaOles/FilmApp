@@ -1,10 +1,12 @@
 import { ContentBox } from "./Dashboard.style";
-import { Header } from "../../components/header";
-import { TextSection } from "../../components/textSection";
-import { Movie } from "../../components/Movie";
+import {
+  Header,
+  TextSection,
+  Movie,
+  MovieList,
+  Background,
+} from "../../components";
 import { response } from "./Dashboard.mock";
-import { MovieList } from "../../components/MovieList";
-import { Background } from "../../components/Background";
 
 const Dashboard = () => (
   <Background>

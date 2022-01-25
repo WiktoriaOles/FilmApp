@@ -1,5 +1,5 @@
 import { Container, BigText, SmallText, Div } from "./TextSection.style";
-import { SearchBar } from "../../components/searchBar";
+import { SearchBar } from "../SearchBar";
 
 const TextSection = () => (
   <Container>

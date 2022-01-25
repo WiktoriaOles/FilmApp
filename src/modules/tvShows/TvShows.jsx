@@ -5,14 +5,14 @@ import {
   Movie,
   MovieList,
 } from "../../components";
-import { ContentBox } from "./Movies.style";
+import { ContentBox } from "./TvShows.style";
 import { response } from "../dashboard/Dashboard.mock";
 
-const Movies = () => (
+const TvShows = () => (
   <Background>
     <Header />
     <ContentBox>
-      <InfoBox title="Movies" number="8" />
+      <InfoBox title="TV Shows" number="8" />
       <MovieList
         movies={response.Search.map((movie) => (
           <Movie key={movie.imdbID} title={movie.Title} img={movie.Poster} />
@@ -22,4 +22,4 @@ const Movies = () => (
   </Background>
 );
 
-export default Movies;
+export default TvShows;
