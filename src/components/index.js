@@ -5,3 +5,5 @@ export { Movie } from "./Movie";
 export { MovieList } from "./MovieList";
 export { SearchBar } from "./SearchBar";
 export { TextSection } from "./TextSection";
+export { Baner } from "./Baner";
+export { Rating } from "./Rating";
